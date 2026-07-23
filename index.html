@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Configuração dos caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar ao celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Descrição do site -->
+    <meta
+        name="description"
+        content="Pizzaria Bella Massa - pizzas, bebidas, sobremesas e entrega rápida."
+    >
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Bella Massa Pizzaria</title>
+
+    <!-- Ligação com o arquivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <!-- ============================== -->
+    <!-- CABEÇALHO DO SITE -->
+    <!-- ============================== -->
+
+    <header class="cabecalho">
+
+        <div class="container cabecalho-conteudo">
+
+            <!-- Nome e logotipo da pizzaria -->
+            <a href="#inicio" class="logo">
+                🍕 Bella Massa
+            </a>
+
+            <!-- Menu principal -->
+            <nav class="menu">
+
+                <a href="#inicio">Início</a>
+
+                <a href="#promocoes">Promoções</a>
+
+                <a href="#pizzas">Pizzas</a>
+
+                <a href="#bebidas">Bebidas</a>
+
+                <a href="#sobremesas">Sobremesas</a>
+
+                <a href="#contato">Contato</a>
+
+            </nav>
+
+            <!-- Botão que abre o carrinho -->
+            <button
+                type="button"
+                class="botao-carrinho"
+                id="botao-carrinho"
+            >
+                🛒 Carrinho
+                <span id="quantidade-carrinho">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ============================== -->
+    <!-- CONTEÚDO PRINCIPAL -->
+    <!-- ============================== -->
+
+    <main>
+
+
+        <!-- ============================== -->
+        <!-- BANNER PRINCIPAL -->
+        <!-- ============================== -->
+
+        <section class="banner" id="inicio">
+
+            <div class="container banner-conteudo">
+
+                <div class="banner-texto">
+
+                    <span class="destaque-banner">
+                        Entrega rápida e segura
+                    </span>
+
+                    <h1>
+                        A pizza perfeita para o seu momento
+                    </h1>
+
+                    <p>
+                        Pizzas preparadas com ingredientes selecionados,
+                        massa artesanal e muito sabor.
+                    </p>
+
+                    <div class="banner-botoes">
+
+                        <a href="#pizzas" class="botao-principal">
+                            Ver cardápio
+                        </a>
+
+                        <a href="#promocoes" class="botao-secundario">
+                            Ver promoções
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="banner-imagem">
+
+                    <!-- Depois poderemos substituir por uma imagem real -->
+                    <img
+                        src="imagens/pizza-banner.jpg"
+                        alt="Pizza grande com queijo e pepperoni"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- INFORMAÇÕES RÁPIDAS -->
+        <!-- ============================== -->
+
+        <section class="informacoes">
+
+            <div class="container informacoes-conteudo">
+
+                <div class="informacao">
+
+                    <span>🕒</span>
+
+                    <div>
+                        <h3>Horário</h3>
+                        <p>Todos os dias, das 18h às 23h</p>
+                    </div>
+
+                </div>
+
+                <div class="informacao">
+
+                    <span>🛵</span>
+
+                    <div>
+                        <h3>Entrega</h3>
+                        <p>De 30 a 50 minutos</p>
+                    </div>
+
+                </div>
+
+                <div class="informacao">
+
+                    <span>💳</span>
+
+                    <div>
+                        <h3>Pagamento</h3>
+                        <p>Pix, cartão ou dinheiro</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- PROMOÇÕES DA SEMANA -->
+        <!-- ============================== -->
+
+        <section class="secao promocoes" id="promocoes">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span>Ofertas especiais</span>
+
+                    <h2>Promoções da semana</h2>
+
+                    <p>
+                        Uma promoção diferente para cada dia.
+                    </p>
+
+                </div>
+
+
+                <div class="grade-promocoes">
+
+
+                    <!-- Promoção de segunda-feira -->
+
+                    <article class="card-promocao">
+
+                        <span class="dia-promocao">Segunda-feira</span>
+
+                        <h3>Segunda da Calabresa</h3>
+
+                        <p>
+                            Pizza grande de calabresa com 20% de desconto.
+                        </p>
+
+                        <strong>R$ 39,90</strong>
+
+                        <button
+                            type="button"
+                            class="botao-adicionar"
+                            data-nome="Promoção Segunda da Calabresa"
+                            data-preco="39.90"
+                        >
+                            Adicionar
+                        </button>
+
+                    </article>
+
+
+                    <!-- Promoção de terça-feira -->
+
+                    <article class="card-promocao">
+
+                        <span class="dia-promocao">Terça-feira</span>
+
+                        <h3>Terça em Dobro</h3>
+
+                        <p>
+                            Compre uma pizza grande e leve uma brotinho.
+                        </p>
+
+                        <strong>R$ 59,90</strong>
+
+                        <button
+                            type="button"
+                            class="botao-adicionar"
+                            data-nome="Promoção Terça em Dobro"
+                            data-preco="59.90"
+                        >
+                            Adicionar
+                        </button>
+
+                    </article>
+
+
+                    <!-- Promoção de quarta-feira -->
+
+                    <article class="card-promocao">
+
+                        <span class="dia-promocao">Quarta-feira</span>
+
+                        <h3>Quarta da Família</h3>
+
+                        <p>
+                            Pizza grande mais refrigerante de 2 litros.
+                        </p>
+
+                        <strong>R$ 64,90</strong>
+
+                        <button
+                            type="button"
+                            class="botao-adicionar"
+                            data-nome="Promoção Quarta da Família"
+                            data-preco="64.90"
+                        >
+                            Adicionar
+                        </button>
+
+                    </article>
+
+
+                    <!-- Promoção de quinta-feira -->
+
+                    <article class="card-promocao">
+
+                        <span class="dia-promocao">Quinta-feira</span>
+
+                        <h3>Quinta do Queijo</h3>
+
+                        <p>
+                            Pizza grande de quatro queijos por preço especial.
+                        </p>
+
+                        <strong>R$ 44,90</strong>
+
+                        <button
+                            type="button"
+                            class="botao-adicionar"
+                            data-nome="Promoção Quinta do Queijo"
+                            data-preco="44.90"
+                        >
+                            Adicionar
+                        </button>
+
+                    </article>
+
+
+                    <!-- Promoção de sexta-feira -->
+
+                    <article class="card-promocao">
+
+                        <span class="dia-promocao">Sexta-feira</span>
+
+                        <h3>Sextou com Pizza</h3>
+
+                        <p>
+                            Duas pizzas grandes tradicionais com desconto.
+                        </p>
+
+                        <strong>R$ 89,90</strong>
+
+                        <button
+                            type="button"
+                            class="botao-adicionar"
+                            data-nome="Promoção Sextou com Pizza"
+                            data-preco="89.90"
+                        >
+                            Adicionar
+                        </button>
+
+                    </article>
+
+
+                    <!-- Promoção de sábado -->
+
+                    <article class="card-promocao">
+
+                        <span class="dia-promocao">Sábado</span>
+
+                        <h3>Combo do Sábado</h3>
+
+                        <p>
+                            Pizza grande, refrigerante e sobremesa.
+                        </p>
+
+                        <strong>R$ 79,90</strong>
+
+                        <button
+                            type="button"
+                            class="botao-adicionar"
+                            data-nome="Combo do Sábado"
+                            data-preco="79.90"
+                        >
+                            Adicionar
+                        </button>
+
+                    </article>
+
+
+                    <!-- Promoção de domingo -->
+
+                    <article class="card-promocao">
+
+                        <span class="dia-promocao">Domingo</span>
+
+                        <h3>Domingo em Família</h3>
+
+                        <p>
+                            Pizza família com entrega grátis nos bairros participantes.
+                        </p>
+
+                        <strong>R$ 69,90</strong>
+
+                        <button
+                            type="button"
+                            class="botao-adicionar"
+                            data-nome="Promoção Domingo em Família"
+                            data-preco="69.90"
+                        >
+                            Adicionar
+                        </button>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- CARDÁPIO DE PIZZAS -->
+        <!-- ============================== -->
+
+        <section class="secao cardapio" id="pizzas">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span>Nosso cardápio</span>
+
+                    <h2>Pizzas</h2>
+
+                    <p>
+                        Escolha sua pizza preferida.
+                    </p>
+
+                </div>
+
+
+                <div class="grade-produtos">
+
+
+                    <!-- Pizza 1 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/pizza-calabresa.jpg"
+                            alt="Pizza de calabresa"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Pizza Calabresa</h3>
+
+                            <p>
+                                Molho de tomate, mussarela, calabresa,
+                                cebola e orégano.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 44,90</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Pizza Calabresa"
+                                    data-preco="44.90"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Pizza 2 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/pizza-mussarela.jpg"
+                            alt="Pizza de mussarela"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Pizza Mussarela</h3>
+
+                            <p>
+                                Molho de tomate, mussarela, tomate,
+                                azeitona e orégano.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 42,90</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Pizza Mussarela"
+                                    data-preco="42.90"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Pizza 3 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/pizza-frango.jpg"
+                            alt="Pizza de frango com catupiry"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Frango com Catupiry</h3>
+
+                            <p>
+                                Molho de tomate, mussarela, frango,
+                                catupiry e orégano.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 49,90</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Pizza Frango com Catupiry"
+                                    data-preco="49.90"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Pizza 4 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/pizza-portuguesa.jpg"
+                            alt="Pizza portuguesa"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Pizza Portuguesa</h3>
+
+                            <p>
+                                Mussarela, presunto, ovos, cebola,
+                                pimentão e azeitona.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 52,90</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Pizza Portuguesa"
+                                    data-preco="52.90"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Pizza 5 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/pizza-quatro-queijos.jpg"
+                            alt="Pizza de quatro queijos"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Quatro Queijos</h3>
+
+                            <p>
+                                Mussarela, parmesão, provolone,
+                                gorgonzola e orégano.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 54,90</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Pizza Quatro Queijos"
+                                    data-preco="54.90"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Pizza 6 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/pizza-marguerita.jpg"
+                            alt="Pizza marguerita"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Pizza Marguerita</h3>
+
+                            <p>
+                                Molho de tomate, mussarela,
+                                tomate, manjericão e orégano.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 46,90</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Pizza Marguerita"
+                                    data-preco="46.90"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Pizza 7 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/pizza-pepperoni.jpg"
+                            alt="Pizza de pepperoni"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Pizza Pepperoni</h3>
+
+                            <p>
+                                Molho de tomate, mussarela,
+                                pepperoni e orégano.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 56,90</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Pizza Pepperoni"
+                                    data-preco="56.90"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Pizza 8 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/pizza-bacon.jpg"
+                            alt="Pizza de bacon com cheddar"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Bacon com Cheddar</h3>
+
+                            <p>
+                                Mussarela, bacon crocante,
+                                cheddar e orégano.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 54,90</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Pizza Bacon com Cheddar"
+                                    data-preco="54.90"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Pizza 9 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/pizza-vegetariana.jpg"
+                            alt="Pizza vegetariana"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Pizza Vegetariana</h3>
+
+                            <p>
+                                Mussarela, tomate, milho,
+                                cebola, pimentão e azeitona.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 48,90</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Pizza Vegetariana"
+                                    data-preco="48.90"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Pizza 10 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/pizza-chocolate.jpg"
+                            alt="Pizza de chocolate com morango"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Chocolate com Morango</h3>
+
+                            <p>
+                                Chocolate ao leite, morangos
+                                e leite condensado.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 45,90</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Pizza Chocolate com Morango"
+                                    data-preco="45.90"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- BEBIDAS -->
+        <!-- ============================== -->
+
+        <section class="secao bebidas" id="bebidas">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span>Para acompanhar</span>
+
+                    <h2>Bebidas</h2>
+
+                </div>
+
+
+                <div class="grade-produtos grade-menor">
+
+
+                    <!-- Bebida 1 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/refrigerante.jpg"
+                            alt="Refrigerante de 2 litros"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Refrigerante 2 litros</h3>
+
+                            <p>
+                                Escolha entre Coca-Cola, Guaraná ou Fanta.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 14,00</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Refrigerante 2 litros"
+                                    data-preco="14.00"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Bebida 2 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/suco.jpg"
+                            alt="Suco natural"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Suco Natural</h3>
+
+                            <p>
+                                Sabores de laranja, acerola ou maracujá.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 8,00</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Suco Natural"
+                                    data-preco="8.00"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Bebida 3 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/agua.jpg"
+                            alt="Garrafa de água mineral"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Água Mineral</h3>
+
+                            <p>
+                                Garrafa de 500 ml, com ou sem gás.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 4,00</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Água Mineral"
+                                    data-preco="4.00"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- SOBREMESAS -->
+        <!-- ============================== -->
+
+        <section class="secao sobremesas" id="sobremesas">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span>Finalize com algo doce</span>
+
+                    <h2>Sobremesas</h2>
+
+                </div>
+
+
+                <div class="grade-produtos grade-menor">
+
+
+                    <!-- Sobremesa 1 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/brownie.jpg"
+                            alt="Brownie com chocolate"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Brownie de Chocolate</h3>
+
+                            <p>
+                                Brownie macio com cobertura de chocolate.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 12,00</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Brownie de Chocolate"
+                                    data-preco="12.00"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Sobremesa 2 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/pudim.jpg"
+                            alt="Fatia de pudim"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Pudim</h3>
+
+                            <p>
+                                Pudim tradicional com calda de caramelo.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 10,00</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Pudim"
+                                    data-preco="10.00"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Sobremesa 3 -->
+
+                    <article class="card-produto">
+
+                        <img
+                            src="imagens/mousse.jpg"
+                            alt="Mousse de maracujá"
+                        >
+
+                        <div class="card-produto-conteudo">
+
+                            <h3>Mousse de Maracujá</h3>
+
+                            <p>
+                                Mousse cremoso com calda de maracujá.
+                            </p>
+
+                            <div class="produto-rodape">
+
+                                <strong>R$ 9,00</strong>
+
+                                <button
+                                    type="button"
+                                    class="botao-adicionar"
+                                    data-nome="Mousse de Maracujá"
+                                    data-preco="9.00"
+                                >
+                                    Adicionar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- ÁREA DE ENTREGA -->
+        <!-- ============================== -->
+
+        <section class="secao entrega" id="entrega">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span>Entrega rápida</span>
+
+                    <h2>Calcule o frete</h2>
+
+                    <p>
+                        Selecione seu bairro para calcular a taxa de entrega.
+                    </p>
+
+                </div>
+
+
+                <div class="caixa-entrega">
+
+                    <label for="bairro">
+                        Bairro
+                    </label>
+
+                    <select id="bairro">
+
+                        <option value="">
+                            Selecione seu bairro
+                        </option>
+
+                        <option value="0">
+                            Retirada na pizzaria — Grátis
+                        </option>
+
+                        <option value="5">
+                            Centro — R$ 5,00
+                        </option>
+
+                        <option value="7">
+                            Bairro da Liberdade — R$ 7,00
+                        </option>
+
+                        <option value="8">
+                            Bairro das Palmeiras — R$ 8,00
+                        </option>
+
+                        <option value="10">
+                            Bairro Novo — R$ 10,00
+                        </option>
+
+                        <option value="12">
+                            Jardim América — R$ 12,00
+                        </option>
+
+                    </select>
+
+                    <p id="resultado-frete">
+                        Selecione um bairro para consultar o frete.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- FORMULÁRIO DO CLIENTE -->
+        <!-- ============================== -->
+
+        <section class="secao dados-cliente" id="finalizar">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span>Finalização</span>
+
+                    <h2>Dados para entrega</h2>
+
+                </div>
+
+
+                <form id="formulario-pedido">
+
+
+                    <div class="grupo-campos">
+
+                        <div class="campo">
+
+                            <label for="nome">
+                                Nome completo
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nome"
+                                name="nome"
+                                placeholder="Digite seu nome"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="telefone">
+                                Telefone
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="telefone"
+                                name="telefone"
+                                placeholder="(00) 00000-0000"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="grupo-campos">
+
+                        <div class="campo">
+
+                            <label for="rua">
+                                Rua
+                            </label>
+
+                            <input
+                                type="text"
+                                id="rua"
+                                name="rua"
+                                placeholder="Nome da rua"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="campo campo-pequeno">
+
+                            <label for="numero">
+                                Número
+                            </label>
+
+                            <input
+                                type="text"
+                                id="numero"
+                                name="numero"
+                                placeholder="123"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="grupo-campos">
+
+                        <div class="campo">
+
+                            <label for="complemento">
+                                Complemento
+                            </label>
+
+                            <input
+                                type="text"
+                                id="complemento"
+                                name="complemento"
+                                placeholder="Apartamento, bloco ou referência"
+                            >
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="pagamento">
+                                Forma de pagamento
+                            </label>
+
+                            <select
+                                id="pagamento"
+                                name="pagamento"
+                                required
+                            >
+
+                                <option value="">
+                                    Selecione
+                                </option>
+
+                                <option value="Pix">
+                                    Pix
+                                </option>
+
+                                <option value="Cartão de crédito">
+                                    Cartão de crédito
+                                </option>
+
+                                <option value="Cartão de débito">
+                                    Cartão de débito
+                                </option>
+
+                                <option value="Dinheiro">
+                                    Dinheiro
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="observacao">
+                            Observações
+                        </label>
+
+                        <textarea
+                            id="observacao"
+                            name="observacao"
+                            rows="4"
+                            placeholder="Exemplo: retirar cebola, levar troco para R$ 100,00..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="botao-finalizar"
+                    >
+                        Finalizar pedido
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ============================== -->
+    <!-- CARRINHO LATERAL -->
+    <!-- ============================== -->
+
+    <aside class="carrinho" id="carrinho">
+
+        <div class="carrinho-cabecalho">
+
+            <h2>Seu pedido</h2>
+
+            <button
+                type="button"
+                id="fechar-carrinho"
+                aria-label="Fechar carrinho"
+            >
+                ✕
+            </button>
+
+        </div>
+
+
+        <!-- Os produtos serão colocados aqui pelo JavaScript -->
+
+        <div id="itens-carrinho" class="itens-carrinho">
+
+            <p class="carrinho-vazio">
+                Seu carrinho está vazio.
+            </p>
+
+        </div>
+
+
+        <div class="resumo-carrinho">
+
+            <div class="linha-total">
+
+                <span>Subtotal</span>
+
+                <strong id="subtotal">
+                    R$ 0,00
+                </strong>
+
+            </div>
+
+            <div class="linha-total">
+
+                <span>Frete</span>
+
+                <strong id="valor-frete">
+                    R$ 0,00
+                </strong>
+
+            </div>
+
+            <div class="linha-total total-final">
+
+                <span>Total</span>
+
+                <strong id="total">
+                    R$ 0,00
+                </strong>
+
+            </div>
+
+            <a href="#finalizar" class="botao-ir-finalizacao">
+                Continuar pedido
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Fundo escuro que aparece atrás do carrinho -->
+
+    <div class="fundo-carrinho" id="fundo-carrinho"></div>
+
+
+    <!-- ============================== -->
+    <!-- RODAPÉ -->
+    <!-- ============================== -->
+
+    <footer class="rodape" id="contato">
+
+        <div class="container rodape-conteudo">
+
+
+            <div class="rodape-coluna">
+
+                <h2>🍕 Bella Massa</h2>
+
+                <p>
+                    Pizzas artesanais, ingredientes selecionados
+                    e entrega rápida.
+                </p>
+
+            </div>
+
+
+            <div class="rodape-coluna">
+
+                <h3>Contato</h3>
+
+                <p>WhatsApp: (00) 00000-0000</p>
+
+                <p>Telefone: (00) 0000-0000</p>
+
+                <p>Instagram: @bellamassa</p>
+
+            </div>
+
+
+            <div class="rodape-coluna">
+
+                <h3>Funcionamento</h3>
+
+                <p>Segunda a domingo</p>
+
+                <p>Das 18h às 23h</p>
+
+            </div>
+
+
+            <div class="rodape-coluna">
+
+                <h3>Endereço</h3>
+
+                <p>
+                    Rua das Pizzas, 100
+                </p>
+
+                <p>
+                    Centro
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="rodape-final">
+
+            <p>
+                © 2026 Bella Massa Pizzaria. Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Ligação com o arquivo JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
